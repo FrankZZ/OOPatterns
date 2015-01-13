@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPatterns.Nodes
 {
-	abstract class SingleInputNode : Node
+	public abstract class SingleInputNode : Node
 	{
 		protected int _inputA;
 

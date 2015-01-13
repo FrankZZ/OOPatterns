@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOPatterns.Visitors;
 
 namespace OOPatterns.Nodes
 {
-	class NAND : DualInputNode
+	public class NAND : DualInputNode
 	{
 		// Visitor
-		public void Accept(INodeVisitor visitor)
+		public override void Accept(INodeVisitor visitor)
 		{
 			visitor.Visit(this);
 		}

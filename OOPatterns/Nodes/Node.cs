@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOPatterns.Visitors;
 
 namespace OOPatterns.Nodes
 {
@@ -11,6 +12,9 @@ namespace OOPatterns.Nodes
 		public List<Node> _connections = new List<Node>();
 
 		protected string _key;
+
+		// Visitor 
+		public abstract void Accept(INodeVisitor visitor);
 
 		// Return the switch type, eg. XOR
 		public String Key

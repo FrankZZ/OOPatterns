@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPatterns.Nodes
 {
-	abstract class DualInputNode : Node
+	public abstract class DualInputNode : Node
 	{
 		// input 1
 		protected int _inputA;

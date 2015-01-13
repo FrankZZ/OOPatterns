@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOPatterns.Visitors;
 
 namespace OOPatterns.Nodes
 {
-	class NOR : DualInputNode
+	public class NOR : DualInputNode
 	{
 		// Visitor
-		public void Accept(INodeVisitor visitor)
+		public override void Accept(INodeVisitor visitor)
 		{
 			visitor.Visit(this);
 		}

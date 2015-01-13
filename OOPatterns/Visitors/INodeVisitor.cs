@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOPatterns.Nodes;
 
-namespace OOPatterns.Nodes
+namespace OOPatterns.Visitors
 {
-	interface INodeVisitor
+	public interface INodeVisitor
 	{
 		void Visit(AND obj);
 		void Visit(NAND obj);
