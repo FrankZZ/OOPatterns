@@ -41,11 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Circuit.cs" />
+    <Compile Include="Nodes\DualInputNode.cs" />
+    <Compile Include="Nodes\DualInput\AND.cs" />
+    <Compile Include="Nodes\DualInput\NOR.cs" />
+    <Compile Include="Nodes\DualInput\OR.cs" />
+    <Compile Include="Nodes\INodeVisitor.cs" />
+    <Compile Include="Nodes\Node.cs" />
+    <Compile Include="Nodes\SingleInput\Low.cs" />
+    <Compile Include="Nodes\SingleInput\Probe.cs" />
+    <Compile Include="Nodes\DualInput\NAND.cs" />
+    <Compile Include="Nodes\DualInput\XOR.cs" />
+    <Compile Include="Nodes\SingleInput\High.cs" />
+    <Compile Include="Nodes\SingleInput\NOT.cs" />
+    <Compile Include="Nodes\SingleInputNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
