@@ -9,14 +9,14 @@ namespace OOPatterns.Visitors
 {
 	class InputNodeVisitor : NodeVisitor
 	{
-		// High node must be added to List
-		public override void Visit(High obj)
+		// INPUT_HIGH node must be added to List
+		public override void Visit(INPUT_HIGH obj)
 		{
 			Add(obj);
 		}
 
-		// Low node must be added to List
-		public override void Visit(Low obj)
+		// INPUT_LOW node must be added to List
+		public override void Visit(INPUT_LOW obj)
 		{
 			Add(obj);
 		}

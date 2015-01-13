@@ -18,12 +18,12 @@ namespace OOPatterns.Nodes
 		{
 			if (_inputA == -1)
 			{
-				Console.WriteLine("[" + this.Id + "] SET VALUE [A] TO [" + value + "].");
+				Console.WriteLine("[" + this.GetPaddedId() + "] SET VALUE A TO: " + value + ".");
 				_inputA = value;
 			}
 			else
 			{
-				Console.WriteLine("[" + this.Id + "] SET VALUE [B] TO [" + value + "].");
+				Console.WriteLine("[" + this.GetPaddedId() + "] SET VALUE B TO: " + value + ".");
 				_inputB = value;
 			}
 

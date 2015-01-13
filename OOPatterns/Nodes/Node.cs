@@ -28,10 +28,29 @@ namespace OOPatterns.Nodes
 		public abstract object Clone();
 
 		// Identifier of the switch
+		private string _id;
 		public string Id
 		{
-			get;
-			set;
+			get
+			{
+				return _id;
+			}
+			set
+			{
+				_id = value;
+				Console.WriteLine("[" + this.GetPaddedId() + "] INITIALIZED.");
+			}
+		}
+
+		public string GetPaddedId()
+		{
+			string Id = this.Id;
+			int length = 6 - this.Id.Length;
+
+			for (int i = 0; i < length; i++)
+				Id += " ";
+
+			return Id;
 		}
 
 		protected abstract void setValue(int value);
@@ -39,7 +58,7 @@ namespace OOPatterns.Nodes
 		public void Connect(Node node)
 		{
 			this._connections.Add(node);
-			Console.WriteLine("[" + this.Id + "] CONNECTED TO [" + node.Id + "].");
+			Console.WriteLine("[" + this.GetPaddedId() + "] CONNECTED TO [" + node.GetPaddedId() + "].");
 		}
 
 		

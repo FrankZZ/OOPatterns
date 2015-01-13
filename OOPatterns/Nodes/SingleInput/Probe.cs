@@ -7,7 +7,7 @@ using OOPatterns.Visitors;
 
 namespace OOPatterns.Nodes
 {
-	public class Probe : SingleInputNode
+	public class PROBE : SingleInputNode
 	{
 		// Visitor
 		public override void Accept(INodeVisitor visitor)
@@ -18,7 +18,7 @@ namespace OOPatterns.Nodes
 		// Factory
 		public override object Clone()
 		{
-			return new Probe();
+			return new PROBE();
 		}
 
 		// Decorator

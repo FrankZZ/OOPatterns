@@ -24,16 +24,16 @@ namespace OOPatterns.Visitors
 			_nodes.Add(obj);
 		}
 
-		public virtual void Visit(Probe obj)
+		public virtual void Visit(PROBE obj)
 		{
 			
 		}
-		public virtual void Visit(High obj)
+		public virtual void Visit(INPUT_HIGH obj)
 		{
 			
 		}
 
-		public virtual void Visit(Low obj)
+		public virtual void Visit(INPUT_LOW obj)
 		{
 			
 		}

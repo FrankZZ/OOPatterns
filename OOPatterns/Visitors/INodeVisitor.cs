@@ -14,10 +14,10 @@ namespace OOPatterns.Visitors
 		void Visit(NOR obj);
 		void Visit(OR obj);
 		void Visit(XOR obj);
-		void Visit(High obj);
-		void Visit(Low obj);
+		void Visit(INPUT_HIGH obj);
+		void Visit(INPUT_LOW obj);
 		void Visit(NOT obj);
 
-		void Visit(Probe obj);
+		void Visit(PROBE obj);
 	}
 }

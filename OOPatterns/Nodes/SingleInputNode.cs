@@ -12,7 +12,7 @@ namespace OOPatterns.Nodes
 
 		protected override void setValue(int value)
 		{
-			Console.WriteLine("[" + this.Id + "] SET VALUE [A] TO [" + value + "].");
+			Console.WriteLine("[" + this.GetPaddedId() + "] SET VALUE A TO: " + value + ".");
 			_inputA = value;
 			PushValue();
 		}

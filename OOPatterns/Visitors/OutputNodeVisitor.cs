@@ -9,8 +9,8 @@ namespace OOPatterns.Visitors
 {
 	class OutputNodeVisitor : NodeVisitor
 	{
-		// Probe node found, must be added to list
-		public override void Visit(Probe obj)
+		// PROBE node found, must be added to list
+		public override void Visit(PROBE obj)
 		{
 			Add(obj);
 		}

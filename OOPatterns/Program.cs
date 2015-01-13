@@ -12,24 +12,15 @@ namespace OOPatterns
 	{
 		static void Main(string[] args)
 		{
-			/*
-			Console.WriteLine("Please input the path to a circuit file to load...");
-			string filePath = Console.ReadLine();
-
-			using (StreamReader sr = new StreamReader(filePath))
+			while (true)
 			{
-				string line;
-				while ((line = sr.ReadLine()) != null)
-				{
+				Console.WriteLine("Please input the path to a circuit file to load...");
+				string filePath = Console.ReadLine();
 
-				}
+				Circuit circuit = Circuit.Parse(filePath);
+			
+				circuit.Start();
 			}
-			*/
-
-			NOT xor = new NOT();
-
-			Console.WriteLine(xor.Key);
-			Console.ReadKey();
 		}
 	}
 }
